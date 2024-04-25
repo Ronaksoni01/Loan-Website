@@ -1,0 +1,84 @@
+{% include 'header.html' %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            height: 200px;
+
+        }
+
+        .mains {
+            background-color: rgb(14, 14, 108);
+            padding-left: 200px;
+            padding-right: 250px;
+        }
+
+        .main button {
+            height: 35px;
+            width: 150%;
+            border-radius: 10px;
+            border: none;
+            background-color: dimgrey;
+            color: white;
+        }
+
+        .second {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        ol li{
+            border: 1px solid black;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mains">
+        <br>
+        <br>
+        <h1 style="text-align: center; color: white;">frequenty asked question</h1>
+        <div class="main">
+            <br>
+            <br>
+
+
+            <div><button>MSME Loan</button></div>
+            <div><button>Mudra Loan</button></div>
+            <div><button>Home Loan</button></div>
+            <div><button>Personal Loan</button></div>
+            <div><button>Auto Loan</button></div>
+        </div>
+    </div>
+
+
+    <div class="second">
+        <div>
+            <h5>general</h5><br>
+        <a href="" style="color: black;">sign up,password & login</a><br>
+        <a href="" style="color: black;">sign up,password & login</a><br>
+        </div>
+        <div>
+            <ol>
+                <li>what is the minimum and maximum loan amount one can borrow through the portal?</li>
+                <li>how do i make a loan applicatio/submit proposal? </li><br>
+                <li>do i need to provide fees for registration</li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>
+{% include 'footer.html' %}

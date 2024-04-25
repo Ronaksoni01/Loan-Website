@@ -1,0 +1,60 @@
+{% include 'header.html' %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .document {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 310px;
+            margin-left: 310px;
+        }
+
+        .provide {
+            margin-bottom: 150px;
+        }
+        input{
+            width: 80%;
+            height: 30px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            border-radius: 5px;
+            border: 1px groove rgb(151, 142, 142);
+            
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: left; color: blue;">Documents</h1>
+    <div class="document">
+        <div class="kyc">
+            <img src="/static/image/kyc.png" height="400px" alt="">
+        </div>
+        <div class="provide">
+            <p style="padding-left: 0px;">Provide the following KYC document for evaluation of your loan-<br>
+                worthiness</p>
+            <br>
+            <input type="text" placeholder="PAN Card."><br>
+            <br>
+            <input type="text" placeholder="Salary Slips (Last 3 months)."><br>
+            <br>
+            <input type="text" placeholder="Bank Statment of salary Account (3/6 months)."><br>
+            <br>
+            <input type="text" placeholder="Address Proof."><br>
+                
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+{% include 'footer.html' %}

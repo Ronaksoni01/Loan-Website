@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+
+
+  <style>
+    .one {
+
+      background-image: url("/static/image/jonathan-cooper-0O2Pp6-mOkY-unsplash.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(252, 252, 252);
+    }
+
+    li {
+      display: inline-block;
+      padding-left: 100px;
+    }
+
+    .li1 {
+      padding: 0;
+    }
+
+
+    nav {
+      /* background-color: antiquewhite; */
+      height: 50px;
+
+      padding-top: 5px;
+    }
+
+    .main {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .picture {
+      width: 50%;
+      padding-top: 50px;
+      padding-right: 50px;
+      padding-top: 100px;
+      color: white;
+    }
+
+
+    .forms {
+      width: 50%;
+      color: white;
+      padding-left: 300px;
+      padding-top: 100px;
+      font-size: 40px;
+    }
+
+    h2 {
+      text-align: center;
+      color: black;
+    }
+
+    .how {
+      background-color: #1f8172;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+
+    }
+
+    .how:hover {
+      background-color: rgb(8, 9, 9);
+    }
+
+    .hows {
+      background-color: #1f8172;
+      color: rgb(254, 254, 254);
+      padding: 8px 20px;
+      margin-left: 50px;
+      border: none;
+      border-radius: 4px;
+
+    }
+
+    .hows:hover {
+      background-color: darkblue;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      /* display: flex;
+            align-items: center;
+            justify-content: center; */
+      height: 100vh;
+    }
+
+    .containers {
+      background-color: #fff;
+      padding: 20px;
+      width: 35%;
+      margin-top: 80px;
+      color: black;
+      border-radius: 8px;
+      margin-right: 80px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 8px;
+    }
+
+    input {
+      padding: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .blog {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 150px;
+      padding-right: 150px;
+
+    }
+
+    .card {
+      height: 260px;
+      box-sizing: border-box;
+    }
+
+    .card-img-top {
+      height: 100px;
+      width: 100%;
+    }
+
+    .but {
+      border-radius: 10px;
+      background-color: rgb(8, 78, 78);
+
+    }
+
+    .card1 {
+      padding: 10px;
+    }
+
+    .offers {
+      margin: 30px;
+    }
+
+    .bussiness {
+      background-image: url("/static/image/paul-felberbauer-idNOBU5k_80-unsplash.jpg");
+      background-position: center;
+      background-size: cover;
+      height: 300px;
+    }
+
+    .information {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 400px;
+      padding-right: 400px;
+      height: 200px;
+      background-color: slategrey;
+
+    }
+
+    .inf1 {
+      background-color: white;
+      height: 100px;
+      width: 20%;
+      border-radius: 10px;
+
+    }
+
+    .footers {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 150px;
+      padding-left: 50px;
+      padding-right: 50px;
+      background-color: black;
+      color: white;
+    }
+
+    .feedback {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 370px;
+      padding-right: 370px;
+    }
+
+    .mains {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    * {
+      font-family: Nunito, sans-serif;
+    }
+
+    .text-blk {
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      line-height: 25px;
+    }
+
+    .responsive-cell-block {
+      min-height: 75px;
+    }
+
+    .responsive-container-block {
+      min-height: 75px;
+      height: fit-content;
+      width: 92%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 0px;
+      margin-right: auto;
+      margin-bottom: 0px;
+      margin-left: auto;
+      justify-content: space-evenly;
+    }
+
+    .outer-container {
+      padding-top: 10px;
+      padding-right: 50px;
+      padding-bottom: 10px;
+      padding-left: 50px;
+      background-color: rgb(244, 252, 255);
+    }
+
+    .inner-container {
+      max-width: 1320px;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      margin-right: auto;
+      margin-bottom: 50px;
+      margin-left: auto;
+    }
+
+    .section-head-text {
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 5px;
+      margin-left: 0px;
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 48px;
+      color: rgb(0, 135, 177);
+      margin: 0 0 10px 0;
+    }
+
+    .section-subhead-text {
+      font-size: 25px;
+      color: rgb(153, 153, 153);
+      line-height: 35px;
+      max-width: 470px;
+      text-align: center;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 60px;
+      margin-left: 0px;
+    }
+
+    .img-wrapper {
+      width: 100%;
+    }
+
+    .team-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .social-media-links {
+      width: 125px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .name {
+      font-size: 25px;
+      font-weight: 700;
+      color: rgb(102, 102, 102);
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 5px;
+      margin-left: 0px;
+    }
+
+    .position {
+      font-size: 25px;
+      font-weight: 700;
+      color: rgb(0, 135, 177);
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 50px;
+      margin-left: 0px;
+    }
+
+    .team-img {
+      width: 100%;
+      height: 300px;
+    }
+
+    .team-card-container {
+      width: 200px;
+      margin: 0 0 40px 0;
+    }
+
+    @media (max-width: 500px) {
+      .outer-container {
+        padding: 10px 20px 10px 20px;
+      }
+
+      .section-head-text {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="one">
+    <div class="container">
+      <nav>
+        <ul type="none">
+
+          <li class="li1"><a href="">MONEY <span style="color: rgb(7, 7, 133);">SUTRA</span> </a></li>
+          <li><a href="/bussiness/">Bussiness</a></li>
+          <li><a href="/learn/">Learn</a></li>
+          <li><a href="/aboutus/">About</a></li>
+          <li><a href="/peages/">Peages</a></li>
+          <!-- <ii><a href="">Blog</a></ii> -->
+          <li><a href="/service/">Service</a></li>
+          <li><a href="/contactus/">Contact</a></li>
+          <li><a href="">+10-57-56-3525</a></li>
+          <a href="/applyloan/"><input type="submit" value="Apply For A loan" class="hows"></a>
+        </ul>
+      </nav>
+    </div>
+    <div class="main">
+      <div class="forms">
+        Get Loan For Your<br>
+        Business growth or<br>
+        startup<br>
+
+        <a href="/signup/"><input type="submit" value="How its Works" class="how"></a>
+      </div>
+
+      <div class="picture">
+
+
+      </div>
+
+
+
+
+
+
+
+      <div class="containers">
+        <form action="/home/" method="post">
+          {% csrf_token %}
+          <h2>Loan Application Form</h2>
+
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required value="{{ name }}">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required value="{{ email }}">
+
+          <label for="amount">Loan Amount:</label>
+          <input type="number" id="amount" name="amount" required value="{{ amount }}">
+
+          <label for="term">Loan Term (months):</label>
+          <input type="number" id="term" name="term" required value="{{ term }}">
+
+          <button type="submit">Submit Application</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <div class="offers">
+    <h2>What we offer for you</h2>
+    <h5 style="text-align: center;">We provide online instant cash loans with quick approval that suit your term
+    </h5>
+  </div>
+
+
+  <div class="blog">
+    <div class="card1">
+      <div class="card" style="width: 18rem;">
+        <img src="/static/image/kelly-sikkema-3-Tc_5LROrM-unsplash - Copy.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Calculators</h3>
+          <p class="card-text">Some quick example text to build on the card title and make up.</p>
+          <button class="but"><a href="/calculoter/" class="buttons">Calculator now ></a></button>
+        </div>
+      </div>
+    </div>
+    <div class="card1">
+      <div class="card" style="width: 18rem;">
+        <img src="/static/image/stephan-bechert-yFV39g6AZ5o-unsplash.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Home Buyers</h3>
+          <p class="card-text">Some quick example text to build on the card title and make up.</p>
+          <button class="but"> <a href="#" class="buttons">Learn More ></a></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card1">
+      <div class="card" style="width: 18rem;">
+        <img src="/static/image/amy-hirschi-W7aXY5F2pBo-unsplash.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">bussiness loan</h3>
+          <p class="card-text">Some quick example text to build on the card title and make up.</p>
+          <button class="but"><a href="/bussiness/" class="buttons">Find out ></a></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card1">
+      <div class="card" style="width: 18rem;">
+        <img src="/static/image/christopher-gower-m_HRfLhgABo-unsplash.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Share Market</h3>
+          <p class="card-text">Some quick example text to build on the card title and make up.</p>
+          <button class="but"><a href="#" class="buttons">Go somewhere ></a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <br>
+  <hr>
+
+
+
+
+  <div class="offers">
+    <h5 style="text-align: center;">What We're Offering</h5>
+    <h2>All Loans Services</h2>
+
+    <div class="img1">
+      <img src="/static/image/olav-tvedt-yq-efMJMuPg-unsplash.jpg" width="100%" height="550px" alt="">
+      <h2 style="text-align: left;">Car Loan</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum consequatur incidunt provident dolore
+        et perspiciatis vitae quam error alias veniam.</p>
+      <button style="border-radius: 70px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+        </svg></button>
+    </div>
+    <br>
+    <div class="img2">
+      <img src="/static/image/krakenimages-376KN_ISplE-unsplash.jpg" width="100%" height="600px" alt="">
+      <h2 style="text-align: left;">Wedding Loan</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum consequatur incidunt provident dolore
+        et perspiciatis vitae quam error alias veniam.</p>
+      <button style="border-radius: 70px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+        </svg></button>
+    </div>
+    <br>
+    <div class="img3">
+      <img src="/static/image/frames-for-your-heart-2d4lAQAlbDA-unsplash.jpg" width="100%" height="500px" alt="">
+      <h2 style="text-align: left;">Property Loan</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum consequatur incidunt provident dolore
+        et perspiciatis vitae quam error alias veniam.</p>
+      <button style="border-radius: 70px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+        </svg></button>
+    </div>
+    <br>
+    <div class="img4">
+      <img src="/static/image/van-tay-media-Hh-PIe3qIug-unsplash.jpg" width="100%" height="600px" alt="">
+      <h2 style="text-align: left;">Education Loan</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum consequatur incidunt provident dolore
+        et perspiciatis vitae quam error alias veniam.</p>
+      <button style="border-radius: 70px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+        </svg></button>
+    </div>
+  </div>
+
+
+
+  <div class="bussiness">
+    <p style="text-align: center; color: white; padding-top: 90px; padding-right: 260px;">Simple/Transparent/secure
+    </p>
+    <h1 style="text-align: center; color: white;">Get a Business Loans Quickly</h1>
+
+    <button style="margin-left: 700px; background-color: rgb(73, 167, 199);"><a href="/document/">Apply For Loan</a>
+    </button>
+  </div>
+  <br>
+
+
+
+  <div class="informations" style="background-color:slategray">
+    <h1 style="text-align: center;">Communication and transparency</h1>
+    <p style="text-align: center;">We keep your lone information update via all possible way.</p>
+    <div class="information">
+      <div class="inf1">
+        <button style="border-radius: 60px; margin-left: 50px; margin-top: 10px; background-color: slategrey;"><svg
+            xmlns="http://www.w3.org/2000/svg" style="color: black;" width="16" height="16" fill="currentColor"
+            class="bi bi-chat-left-text" viewBox="0 0 16 16">
+            <path
+              d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+            <path
+              d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5" />
+          </svg></button>
+        <br>
+        <h4 style="text-align: center;">Text message</h4>
+      </div>
+
+      <div class="inf1">
+        <button style="border-radius: 60px; margin-left: 50px; margin-top: 10px;background-color: slategrey;"><svg
+            xmlns="http://www.w3.org/2000/svg" style="color: black;" width="16" height="16" fill="currentColor"
+            class="bi bi-pc-display-horizontal" viewBox="0 0 16 16">
+            <path
+              d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5M12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0m2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0M1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1M1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25" />
+          </svg></button>
+        <br>
+        <h4 style="text-align: center;">Online portal</h4>
+      </div>
+
+      <div class="inf1">
+        <button style="border-radius: 60px;margin-left: 50px; margin-top: 10px; background-color: slategrey;"><svg
+            xmlns="http://www.w3.org/2000/svg" style="color: 
+                rgb(0, 0, 0);" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+            <path
+              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+          </svg></button>
+        <br>
+        <h4 style="text-align: center;">Via Email</h4>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <div class="responsive-container-block outer-container">
+    <div class="responsive-container-block inner-container">
+      <p class="text-blk section-head-text">
+        Meet Our Expert Instructors
+      </p>
+      <p class="text-blk section-subhead-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <div class="responsive-container-block">
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+          <div class="team-card">
+            <div class="img-wrapper">
+              <img class="team-img" src="/static/image/oleg-ivanov-QhR78CbFPoE-unsplash.jpg">
+            </div>
+            <p class="text-blk name">
+              Maxwell Doe
+            </p>
+            <p class="text-blk position">
+              Instructor
+            </p>
+            <div class="social-media-links">
+              <a href="http://www.twitter.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+              </a>
+              <a href="http://www.facebook.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+              </a>
+              <a href="http://www.instagram.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+              </a>
+              <a href="http://www.gmail.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+          <div class="team-card">
+            <div class="img-wrapper">
+              <img class="team-img" src="/static/image/ronak.jpg">
+            </div>
+            <p class="text-blk name">
+              Ronak Soni
+            </p>
+            <p class="text-blk position">
+              Instructor
+            </p>
+            <div class="social-media-links">
+              <a href="http://www.twitter.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+              </a>
+              <a href="http://www.facebook.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+              </a>
+              <a href="http://www.instagram.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+              </a>
+              <a href="http://www.gmail.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+          <div class="team-card">
+            <div class="img-wrapper">
+              <img class="team-img" src="/static/image/stephanie-nakagawa-ADSKIn0ScDg-unsplash.jpg">
+            </div>
+            <p class="text-blk name">
+              Maxwell Doe
+            </p>
+            <p class="text-blk position">
+              Instructor
+            </p>
+            <div class="social-media-links">
+              <a href="http://www.twitter.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+              </a>
+              <a href="http://www.facebook.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+              </a>
+              <a href="http://www.instagram.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+              </a>
+              <a href="http://www.gmail.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+          <div class="team-card">
+            <div class="img-wrapper">
+              <img class="team-img" src="/static/image/angelina-00RQoOvJ7W4-unsplash.jpg">
+            </div>
+            <p class="text-blk name">
+              Maxwell Doe
+            </p>
+            <p class="text-blk position">
+              Instructor
+            </p>
+            <div class="social-media-links">
+              <a href="http://www.twitter.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+              </a>
+              <a href="http://www.facebook.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+              </a>
+              <a href="http://www.instagram.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+              </a>
+              <a href="http://www.gmail.com/" target="_blank">
+                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footers">
+    <div class="f1">Money Sutra Capital Home Loans<br>
+      14 Cross Street Chrompet, Chennai - 600044<br>
+      Phone: +8875821963 | Email: info@moneysutraloans.com<br>
+      <br>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin"
+        viewBox="0 0 16 16">
+        <path
+          d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter-x"
+        viewBox="0 0 16 16">
+        <path
+          d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook"
+        viewBox="0 0 16 16">
+        <path
+          d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram"
+        viewBox="0 0 16 16">
+        <path
+          d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+      </svg>
+    </div>
+
+    <div class="f2">
+      <h3 style="padding-left: 100px;">Company</h3>
+      <li>About us </li><br>
+      <li>About </li><br>
+      <li>Loan Policys</li>
+    </div>
+
+    <div class="f3">
+      <h3 style="padding-left: 100px;">Support</h3>
+      <li>FAQ </li><br>
+      <li>Customer Care </li><br>
+      <li>24*7 Online Support</li>
+    </div>
+
+    <div class="f4">
+      <h3 style="padding-left: 100px;">Pages</h3>
+      <li>Privacy Policy </li><br>
+      <li>Terms and condition </li><br>
+      <li>About loan documents</li>
+
+    </div>
+  </div>
+
+  <footer style="text-align: center; background-color: black; color: white;">&copy;2024 Money Sutra loan
+    capital,All
+    rights reservesed</footer>
+  <br>
+
+
+
+
+</body>
+
+</html>

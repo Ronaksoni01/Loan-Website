@@ -1,0 +1,94 @@
+{% include 'header.html' %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        table {
+            width: 80%;
+        }
+
+        th {
+            height: 30px;
+            text-align: left;
+            background-color: rgb(194, 196, 197);
+        }
+        td{
+            background-color: rgb(190, 202, 212);
+        }
+        .Payments{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 250px;
+           
+        }
+        .statment{
+            width: 70%;
+        }
+        .upi{
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="img">
+        <img src="/static/image/clay-banks-JU1N79c2i8g-unsplash.jpg" width="100%" height="700px" alt="">
+    </div>
+<br>
+    <h3 style="padding-left: 30px;">Please reply your loan and interst amount through the following bank:-</h3>
+
+    <div class="Payments">
+        <div class="statment">
+            <table>
+                <th style="background-color: rgb(227, 207, 139); text-align: center; height: 60px; border: none;" colspan="2">Money Sutra</th>
+                <tr>
+                    <th>Bank Name</th>
+                    <td>ICICI BANK</td>
+                </tr>
+                <tr>
+                    <th>Company Name</th>
+                    <td>Mahashakti Financiers Ltd</td>
+                </tr>
+                <tr>
+                    <th>Account Number</th>
+                    <td>61323376224</td>
+                </tr>
+                <tr>
+                    <th>IFSC Code</th>
+                    <td>ICIC0032095</td>
+                </tr>
+                <tr>
+                    <th>Branch Name</th>
+                    <td>Gk M Block</td>
+                </tr>
+                <tr>
+                    <th>Account Type</th>
+                    <td>Current Account</td>
+                </tr>
+
+            </table>
+
+
+        </div>
+
+        <div class="upi">
+
+            <img src="/static/image/upi.png" height="300px" width="50%" alt="">
+
+        </div>
+    </div>
+</body>
+
+</html>
+{% include 'footer.html' %}

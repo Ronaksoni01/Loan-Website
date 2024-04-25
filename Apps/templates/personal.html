@@ -1,0 +1,194 @@
+{% include 'header.html' %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-image: url("/static/image/clay-banks-JU1N79c2i8g-unsplash.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 350px;
+            width: 60%;
+            margin-left: 300px;
+            border-radius: 20px;
+            margin-bottom: 80px;
+            margin-top: 50px;
+        }
+
+        .texts {
+            padding-top: 70px;
+            padding-left: 50px;
+            color: white;
+        }
+
+        span {
+            font-size: 30px;
+        }
+
+        button {
+            height: 30px;
+            width: 12%;
+            background-color: darkcyan;
+            color: white;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .banking nav a {
+
+
+            color: rgb(0, 0, 0);
+
+        }
+
+        .banking li {
+            padding: 5px;
+
+
+        }
+
+        .banking ul {
+            background-color: ghostwhite;
+            text-align: center;
+            border-radius: 20px;
+            box-sizing: content-box;
+            width: fit-content;
+            margin-left: 470px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            box-shadow: 5px 2px 5px 5px  rgb(107, 67, 39);
+        }
+
+        .banking li:hover,
+        a:hover {
+            opacity: 0.7;
+        }
+        .flexes{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 310px;
+            padding-right: 310px;
+        }
+        .flexes .a  li{
+            padding-left: 30px;
+            color: rgb(83, 80, 80);
+        }
+        .a{
+            border: 1px solid black;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 20px;
+            background-color: rgb(255, 224, 178);
+            height: 230px;
+            border: none;
+        }
+        .a img{
+            padding-left: 50px;
+        }
+        .money{
+            background-image: url("/static/image/magnet-me-315vPGsAFUk-unsplash.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 300px;
+            width: 70%;
+            margin-left: 200px;
+            padding-top: 100px;
+            padding-left: 50px;
+            color: aliceblue;
+           
+        }
+        .money span{
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="texts">
+            <h1>Money Sutra</h1>
+            <span>For all your top-tier banking</span><br>
+            <span>and wealth management</span><br>
+            <span>requirements</span>
+            <br>
+            <br>
+            <button><a href="">Get in Touch</a></button>
+        </div>
+    </div>
+
+    <h1 style="text-align: center;">First-Class privileges for you</h1>
+    <br>
+    <br>
+
+
+    <div class="banking">
+        <nav>
+            <ul>
+                <li><a href="">Banking</a> </li>
+                <li><a href="">Wealth Managment</a> </li>
+                <li><a href="">Service Experience</a> </li>
+                <li><a href="">Card Privileges</a> </li>
+                <li><a href="">Lifestyle</a> </li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <br>
+
+    <div class="flexes">
+        <div class="a">
+            <h3>Safe deposit locker</h3>
+            <br>
+           <ul>
+            <li>Complimentary locker facility on all<br>sizes for the 1st year</li>
+            <br>
+            <li>Superlative discount from 2nd year<br>onwards</li>
+           </ul>
+           <img src="/static/image/oleg-ivanov-QhR78CbFPoE-unsplash.jpg" height="134px" width="60%"  alt="">
+        </div>
+        <div class="a">
+            <h3>Forex</h3>
+            <br>
+            <ul>
+                <li>Competitive exchange rates on a wide<br>range of currencies</li>
+                <br>
+                <li>Benefit from attractive fees on <br>foreign exchange products</li>
+            </ul>
+            <img src="/static/image/oleg-ivanov-QhR78CbFPoE-unsplash.jpg" height="134px" width="60%"  alt="">
+        </div>
+        <div class="a">
+            <h3>Borrowing Solutions</h3>
+            <br>
+            <ul>
+                <li>Personal Loan,Secured Loan,Car<br>Loan & Housing Loan Products at<br>preferential rates</li>
+            </ul>
+           <img src="/static/image/oleg-ivanov-QhR78CbFPoE-unsplash.jpg" height="154px" width="60%"  alt="">
+        </div>
+    </div>
+<br>
+<br>
+<br>
+
+<div class="money">
+    <h1>Money Sutra Direct</h1>
+    <span>Your direct access to premium Banking</span>
+    <br>
+    <br>
+    <span>Bank with us from the comfort of your home or office.</span>
+    <br>
+    <br>
+    <span>Carry out your financial and non-financial requests simply by calling or<br>writing an email and a MONEY SUTRA First Direct Officer will assist you with all<br>your banking needs.</span>
+</div>
+<br>
+<br>
+
+</body>
+
+</html>
+{% include 'footer.html' %}

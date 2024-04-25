@@ -1,0 +1,60 @@
+{% include "header.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .buttons button{
+        height: 30px;
+        width: 15%;
+        margin-left: 530px;
+        border-radius: 20px;
+        border: none;
+        background-color: aliceblue;
+        box-shadow: 5px 2px 5px 5px rgb(49, 44, 38);
+    }
+    .template{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    </style>
+</head>
+<body>
+   <br>
+
+    <h1 style="text-align: center; padding-bottom: 70px;">Money Sutra News</h1>
+
+  <div class="buttons">
+    <button style="background-color: coral;">News Section</button><button style="margin: 0; background-color: white;">Press Release</button>
+  </div>
+<br><br><br>
+
+
+<div class="template">
+    <div class="">
+        <h2>Business Standard</h2>
+        <span>January 24, 2024</span>
+        <p>Fintech unicorn InCred Finance<br>doubles profit to Rs 298 crore in<br>9MFY24</p>
+
+        <button>Read More</button>
+    </div>
+    <div class="">
+        <h2>BW People</h2>
+        <span>January 12, 2024</span>
+        <p>Kamlesh Dangi,Group Head-HR at<br>InCred believes that one can define <br>culture as an envirinment created by<br>the shared values,beliefs and...</p>
+
+        <button>Read More
+  
+        </button>
+    </div>
+    <div class="">
+        <h2>Inc42</h2>
+    </div>
+</div>
+
+</body>
+</html>
+{% include "footer.html" %}

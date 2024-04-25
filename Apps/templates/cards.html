@@ -1,0 +1,329 @@
+{% include 'header.html' %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav a {
+            text-decoration: none;
+            color: rgb(106, 173, 197);
+            font-size: 20px;
+
+            margin-left: 50px;
+        }
+
+        .nav2 li {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .cards2 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .box {
+            margin-left: 0px;
+            padding-bottom: 10px;
+            background-color: rgb(211, 209, 209);
+            border-radius: 20px;
+            padding-top: 10px;
+
+
+        }
+
+        .box1 {
+            margin-left: 0px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            background-color: rgb(211, 209, 209);
+            border-radius: 20px;
+            color: rgb(180, 236, 236);
+        }
+
+        .box2 {
+            margin-left: 25px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            background-color: rgb(211, 209, 209);
+            border-radius: 20px;
+            color: rgb(180, 236, 236);
+        }
+
+        .flex1 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        .flex1 button {
+            border-radius: 20px;
+            background-color: rgb(233, 13, 13);
+            color: white;
+            height: 30px;
+            width: 30%;
+            border: none;
+        }
+
+        .explore {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+        }
+
+        .explore p {
+            font-size: small;
+        }
+
+        pre {
+            font-size: small;
+        }
+
+        .explore button {
+            border-radius: 20px;
+            background-color: rgb(233, 13, 13);
+            color: white;
+            height: 30px;
+            width: 30%;
+            border: none;
+        }
+
+        .cardss {
+            height: 630px;
+            padding-top: 20px;
+            width: 100%;
+            
+        }
+        img{
+            border-radius: 20px;
+            background-color: antiquewhite;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="">Cards</a>
+    </div>
+    <br>
+    <div class="nav2">
+        <li>Home /</li>
+        <li>Personal Banking /</li>
+        <li>Money Sutra Individual /</li>
+        <li>Card </li>
+    </div>
+
+    <div class="image">
+        <img src="/static/image/lucas-favre-MNXaW_ABlZY-unsplash.jpg" height="350px" width="100%" alt="">
+
+    </div>
+
+    <br>
+
+    <h1 style="text-align: center;">Cards designed for the needs of all</h1>
+    <br>
+    <div class="cards2">
+        <div><svg xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor" class="box"
+                viewBox="0 0 16 16">
+                <path
+                    d="M1.5 2A1.5 1.5 0 0 0 0 3.5v2h6a.5.5 0 0 1 .5.5c0 .253.08.644.306.958.207.288.557.542 1.194.542s.987-.254 1.194-.542C9.42 6.644 9.5 6.253 9.5 6a.5.5 0 0 1 .5-.5h6v-2A1.5 1.5 0 0 0 14.5 2z" />
+                <path
+                    d="M16 6.5h-5.551a2.7 2.7 0 0 1-.443 1.042C9.613 8.088 8.963 8.5 8 8.5s-1.613-.412-2.006-.958A2.7 2.7 0 0 1 5.551 6.5H0v6A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5z" />
+            </svg><br>
+            Debit <br> Cards
+        </div>
+        <div><svg xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor" class="box1"
+                viewBox="0 0 16 16">
+                <path
+                    d="M1.5 2A1.5 1.5 0 0 0 0 3.5v2h6a.5.5 0 0 1 .5.5c0 .253.08.644.306.958.207.288.557.542 1.194.542s.987-.254 1.194-.542C9.42 6.644 9.5 6.253 9.5 6a.5.5 0 0 1 .5-.5h6v-2A1.5 1.5 0 0 0 14.5 2z" />
+                <path
+                    d="M16 6.5h-5.551a2.7 2.7 0 0 1-.443 1.042C9.613 8.088 8.963 8.5 8 8.5s-1.613-.412-2.006-.958A2.7 2.7 0 0 1 5.551 6.5H0v6A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5z" />
+            </svg><br>
+            Prepaid <br> Cards
+        </div>
+        <div><svg xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor" class="box"
+                viewBox="0 0 16 16">
+                <path
+                    d="M1.5 2A1.5 1.5 0 0 0 0 3.5v2h6a.5.5 0 0 1 .5.5c0 .253.08.644.306.958.207.288.557.542 1.194.542s.987-.254 1.194-.542C9.42 6.644 9.5 6.253 9.5 6a.5.5 0 0 1 .5-.5h6v-2A1.5 1.5 0 0 0 14.5 2z" />
+                <path
+                    d="M16 6.5h-5.551a2.7 2.7 0 0 1-.443 1.042C9.613 8.088 8.963 8.5 8 8.5s-1.613-.412-2.006-.958A2.7 2.7 0 0 1 5.551 6.5H0v6A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5z" />
+            </svg><br>
+            Credit <br> Cards
+        </div>
+        <div><svg xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="currentColor" class="box2"
+                viewBox="0 0 16 16">
+                <path
+                    d="M1.5 2A1.5 1.5 0 0 0 0 3.5v2h6a.5.5 0 0 1 .5.5c0 .253.08.644.306.958.207.288.557.542 1.194.542s.987-.254 1.194-.542C9.42 6.644 9.5 6.253 9.5 6a.5.5 0 0 1 .5-.5h6v-2A1.5 1.5 0 0 0 14.5 2z" />
+                <path
+                    d="M16 6.5h-5.551a2.7 2.7 0 0 1-.443 1.042C9.613 8.088 8.963 8.5 8 8.5s-1.613-.412-2.006-.958A2.7 2.7 0 0 1 5.551 6.5H0v6A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5z" />
+            </svg><br>
+            Multi Currency <br> Travel Cards
+        </div>
+
+    </div>
+    <br>
+
+    <div class="flex1">
+        <div style="padding-bottom: 170px;">
+            <h1>Credit Cards</h1>
+            <br>
+
+            <p>Say no to second thoughts while shopping with</p>
+            <p>exclusive privileges,benefits,and unparlleled</p>
+            <p style="padding-right: 250px;">security.</p>
+            <br>
+            <br>
+            <button><a href="" style="color: white;">Apply Now</a> </button> <button
+                style="background-color: white; color: red; border: 1px solid  red;"><a href="" style="color: red;">Know
+                    More</a> </button>
+        </div>
+        <div>
+            <img src="/static/image/arlington-research-nFLmPAf9dVc-unsplash.jpg" width="132.5%" height="400px" alt="">
+        </div>
+    </div>
+
+    <div class="flex1">
+        <div style="padding-bottom: 170px;">
+            <h1>Debit Cards</h1>
+            <br>
+
+            <p>Enjoy easy access to funds wherever you go </p>
+            <p>with benefits that complement your lifestyle.</p>
+            <br>
+            <br>
+            <button><a href="" style="color: white;">Apply Now</a> </button> <button
+                style="background-color: white; color: red; border: 1px solid  red;"><a href="" style="color: red;">Know
+                    More</a> </button>
+        </div>
+        <div>
+            <img src="/static/image/markus-winkler-ahjzVINkuCs-unsplash.jpg" width="132.6%" height="400px" alt="">
+        </div>
+    </div>
+
+
+    <div class="flex1">
+        <div style="padding-bottom: 170px;">
+            <h1>Prepaid Cards</h1>
+            <br>
+
+            <p>Exercise full control on your spending with a</p>
+            <p>feature-packed. convenient alternative to cash.</p>
+            <br>
+            <br>
+            <button style="background-color: white; color: red; border: 1px solid  red;"><a href=""
+                    style="color: red;">Know More</a> </button>
+        </div>
+        <div>
+            <img src="/static/image/mos-design-aBVzRk1CWx8-unsplash.jpg" width="132.5%" height="400px" alt="">
+        </div>
+    </div>
+
+    <div class="flex1">
+        <div style="padding-bottom: 170px;">
+            <h1>Multi Currency <br>
+                Travel Cards</h1>
+            <br>
+
+            <p>Make every trip a hassle-free experience with</p>
+            <p> a safe and convenient way to spend overseas.</p>
+            <br>
+            <br>
+            <button style="background-color: white; color: red; border: 1px solid  red;"><a href=""
+                    style="color: red;">Know More</a> </button>
+        </div>
+        <div>
+            <img src="/static/image/cardmapr-nl-9fByQORuvqM-unsplash.jpg" width="132.6%" height="400px" alt="">
+        </div>
+    </div>
+
+
+    <div class="explore">
+        <div class="cardss"><img src="/static/image/bruce-mars-FWVMhUa_wbY-unsplash.jpg" height="300px" width="95%" alt="">
+            <button style="border-radius: 1%; color: white; background-color: rgb(10, 10, 149); width: 35%;">Saving Account</button>
+            <h3>Money Sutra<br>
+                Digital Saving Account</h3>
+            <br>
+            <pre>Secure & convenient banking at your
+fingertips!</pre>
+            <br>
+            <span>Contactless Account Opening,</span><br>Video KYC Enabled <br>
+            <span>10% discount on Locker rental / </span> <br> Demat AMC for1st year <br>
+            <span>Nill brokerage on tranding up to 5 </span> <br> Lacks by Money Sutra Securities Ltd. <br>
+            <br>
+            <button><a href="" style="color: white;">Apply Now</a> </button> <button
+                style="background-color: white; color: red; border: 1px solid  red;"><a href="" style="color: red;">Know
+                    More</a> </button> 
+        </div>
+        <div class="cardss"><img src="/static/image/van-tay-media-Hh-PIe3qIug-unsplash.jpg" height="300px" width="95%" alt="">
+            <button style="border-radius: 1%; color: white; background-color: rgb(10, 10, 149);">Credit Card</button>
+            <h3>Credit Cards</h3>
+            <br>
+            <pre>Enjoy unparalleled rewards and benefits with
+our Credit Cards
+    </pre>
+            <br>
+            <span>Reward points on every spend</span><br><br>
+            <span>Exclusive discounts across</span><br> merchants <br>
+            <span>Competitive interst rates</span>
+            <br>
+            <button style="margin-top: 40px;"><a href="" style="color: white;">Apply Now</a> </button> <button
+                style="background-color: white; color: red; border: 1px solid  red;"><a href="" style="color: red;">Know
+                    More</a> </button> 
+        </div>
+        <div class="cardss"><img src="/static/image/bermix-studio-T1JKAour2Lo-unsplash.jpg" height="300px" width="95%" alt="">
+            <button style="border-radius: 1%; color: white; background-color: rgb(10, 10, 149);">FD</button>
+            <h3>Fixed Deposit</h3>
+            <br>
+            <pre>Enjoy assured returns with flexibility to
+choose the tenure as per your financial goals
+    </pre>
+            <br>
+            <span>Earn upto 8.25% p.a. interest</span><br>
+            <span>Overdraft facility</span><br>
+            <span>Tenure from 18 months to 36 </span> <br> months
+            <br>
+             <button style="background-color: white; color: red; border: 1px solid  red; margin-top: 60px;"><a href=""
+                    style="color: red;">Know More</a> </button> 
+        </div>
+        <div class="cardss"><img src="/static/image/cardmapr-nl-9fByQORuvqM-unsplash.jpg" height="300px" width="95%" alt="">
+            <button style="border-radius: 1%; color: white; background-color: rgb(10, 10, 149);">Loans</button>
+            <h3>Car Loans</h3>
+            <br>
+            <pre>Best loan deals to land the car of your dreams.</pre>
+            <br>
+            <span>Up to 100% funding on the on-road </span><br> car price <br>
+            <span>Extended loan tensure up to 95 </span><br> months<br>
+            <span>Attractive interst Rates</span>
+            <br>
+            <button style=" background-color: white; color: red; border: 1px solid  red; margin-top: 70px;"><a href=""
+                    style="color: red;">Know More</a> </button> 
+        </div>
+        <div class="cardss"><img src="/static/image/magnet-me-315vPGsAFUk-unsplash.jpg" height="300px" width="95%" alt="">
+            <button style="border-radius: 1%; color: white; background-color: rgb(10, 10, 149);">Loans</button>
+            <h3>Personal Loans</h3>
+            <br>
+            <pre>Avail quick and easy loans for all Personal
+needs.
+    </pre>
+            <br>
+            <span>Loan ammounts from $50,000 to </span> <br> $50,00,000 <br>
+            <span>Flexible repayment tenure from 12 </span> <br> to 72 months <br>
+            <span>Instant loan approvals</span>
+            <br>
+             <button style="background-color: white; color: red; border: 1px solid  red; margin-top: 40px;"><a href=""
+                    style="color: red;">Know More</a> </button> 
+        </div>
+    </div>
+</body>
+
+</html>
+{% include 'footer.html' %}
